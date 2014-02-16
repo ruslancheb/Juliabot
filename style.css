@@ -1,0 +1,7 @@
+h2 {color:green;}
+a:link {color:red; text-decoration:underline;}
+a:visited {color:black; text-decoration:none;}
+a:hover {color:green; text-decoration:oveline;}
+a:active {color:orandge;text-decoration:none;}
+p.new {font-family:Verdana,Tahoma,monospace;font-size:11px;font-variant:small-caps;font-style:italic;font-weight:bold;background-color:#f6f6f6;}
+body {background-image:url(grafika/fonå.jpg)}

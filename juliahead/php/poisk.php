@@ -1,0 +1,34 @@
+<?php
+$handle = fopen($_SERVER['DOCUMENT_ROOT'].'/privet/juliahead/php.kod',"r");
+$text=fread('php.kod',filesize('php.kod'));
+fclose($handle);
+$код_пшп=unserialize($text);
+$код_пшп=array(
+'C:/d.php'=>
+array(
+0=>
+array
+(
+'f='=>'substr',
+)
+,
+1=>
+array
+(
+'f'=>'echo',
+)
+)
+);
+$память_кода=array(
+'substr|1'=>
+array(
+//Указатель
+'file'=>'C:/d.php',
+'nf'=>'5',
+'no'=>'2',
+)
+);
+$handle2 = fopen($_SERVER['DOCUMENT_ROOT'].'/privet/juliahead/php.kod','w');
+fwrite($handle2,serialize($код_пшп)); 
+fclose($handle2);
+?>

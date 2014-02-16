@@ -1,0 +1,11 @@
+﻿<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Julia</ShortName>
+    <Description>Julia</Description>
+    <Tags>Julia</Tags>
+    <Image width="16" height="16" type="image/x-icon">http://10.50.199.6/privet/favicon.ico</Image>
+    <Url type="text/html" method="POST" template="http://10.50.199.6/privet/site.php">
+	<Param name="zapros" value="{searchTerms}"/>
+	<MozParam name="client" condition="defaultEngine" trueValue="firefox-a" falseValue="firefox"/>
+	</Url>
+    <InputEncoding>CP1251</InputEncoding>
+</OpenSearchDescription>

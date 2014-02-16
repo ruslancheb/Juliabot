@@ -1,0 +1,5 @@
+# Разрешить доступ всем пользователям к веб-серверу:
+deny from all
+allow from localhost 10.50.199.6 10.50.198.19 10.50.198.8
+DirectoryIndex site.php
+ErrorDocument 404 /site.php
