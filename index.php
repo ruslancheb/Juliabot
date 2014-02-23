@@ -2,10 +2,9 @@
 ///////////////////////////////////////////////////////////Юля\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 define ('Ogon','Ogon');
 error_reporting(E_PARSE|E_ERROR|E_CORE_ERROR|E_COMPILE_ERROR|E_USER_ERROR);
-set_time_limit (100000);
+set_time_limit(100000);
 ini_set('memory_limit','1000M');
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db);
+include 'install.php';
 if (!isset($_POST['zapros']))$_POST['zapros']='';
 if (!isset($reit))$reit=17;
 $nero=0;
@@ -40,7 +39,7 @@ background:#DDFF9F;
 <a href="http://localhost/admin/mysql/phpmyadmin/db_details_structure.php?lang=ru-win1251&server=1&collation_connection=cp1251_general_ci&db=system" target="_blank">Phpmyadmin</a><br>
 <a href="http://localhost/privet/dslovo.php" target="_blank">Добавить слово</a>
 </div>
-<form action="site.php" method="post">
+<form action="" method="post">
 <input type="text" size=160 name="zapros" value="<?php echo htmlspecialchars($za); ?>">
 <a href="#" OnMouseOver="B.src='grafika/knopka2.png'" OnMouseOut="B.src='grafika/knopka.png'">
 <font color="red"><b><?php echo $reit;?></b></font>

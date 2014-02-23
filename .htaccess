@@ -1,4 +1,4 @@
 # Доступ к данному каталогу запрещен для всех хостов, кроме localhost
-deny from all
+#deny from all
 Allow from localhost 127.0.0.1
-DirectoryIndex site.php
+DirectoryIndex index.php
