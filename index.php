@@ -4,7 +4,6 @@ define ('Ogon','Ogon');
 error_reporting(E_PARSE|E_ERROR|E_CORE_ERROR|E_COMPILE_ERROR|E_USER_ERROR);
 set_time_limit(100000);
 ini_set('memory_limit','1000M');
-include 'install.php';
 if (!isset($_POST['zapros']))$_POST['zapros']='';
 if (!isset($reit))$reit=17;
 $nero=0;
@@ -13,7 +12,9 @@ if(empty($_POST['zapros'])){$za='';}else{$za=$_POST['zapros'];};
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-<title>Проект Юля</title>
+<meta name="description" value="PHP чатбот ,искуственный интеллект написанный на PHP и С++ CUDA">
+<meta name="keywords" "Юля,искуственный интеллект">
+<title>Проект Юля </title>
 <!--Style-->
 <style type="text/css">
 a:link{color:gray;text-decoration:none;}
@@ -47,6 +48,7 @@ background:#DDFF9F;
 </a>
 </form>
 <?php
+
 include 'functions.php';
 $pruju=3;
 $otve=$za;
