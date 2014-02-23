@@ -14,8 +14,7 @@ $nero++;
 //Скрипт ручного добавления слов
 error_reporting(0);
 set_time_limit (100000);
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db);
+include 'install.php';
 
 $t=$_POST['ty'];
 $rod=$_POST['rod'];

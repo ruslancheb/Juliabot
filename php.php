@@ -66,8 +66,6 @@ else
 //////////////////////////////////////////////////!!!!Скрипт (3!T)!!!!!\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 define ('Ogon','Ogon');
 set_time_limit (100000);
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db); 
 ini_set('memory_limit','500M');
 error_reporting(E_PARSE|E_ERROR|E_CORE_ERROR|E_COMPILE_ERROR|E_USER_ERROR);
 #ignore_repeated_errors(true);

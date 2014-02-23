@@ -1,7 +1,6 @@
 <?php
 error_reporting(0);
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db);
+include 'install.php';
 
 $koy=mysql_query("SELECT * FROM esli_to2");
 do{

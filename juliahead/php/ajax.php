@@ -1,8 +1,7 @@
 <?php
 define ('Ogon','Ogon');
 include('..\..\internet.php');
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db);
+include $_SERVER['DOCUMENT_ROOT'].'/install.php';
 mysql_query('SET NAMES "utf8"', $db);
 mysql_query("set character_set_connection=utf8");
 mysql_query("set names utf8");

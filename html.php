@@ -3,8 +3,7 @@
 define ('Ogon','Ogon');
 #error_reporting(0);
 set_time_limit (100000);
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db); 
+include 'install.php';
 #Подключение скрипта с функциями
 include('functions.php');
 echo '<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><title>ty"Юля"</title><link rel="icon" href="favicon.gif" type="image/gif"><br><body bgcolor=DodgerBlue>';

@@ -28,12 +28,11 @@ left: 30%;
 define ('Ogon','Ogon');
 set_time_limit (100000);
 ini_set('memory_limit','1000M');
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db);
+include 'install.php';
 error_reporting(E_PARSE|E_ERROR|E_CORE_ERROR|E_COMPILE_ERROR|E_USER_ERROR);
 include 'functions.php';
 #Вывод списка файлов
-$arg='T:/home/localhost/privet';
+$arg=$_SERVER['DOCUMENT_ROOT'];
 function rmDirRec($dir)
     {
         $objs = glob($dir."/*");

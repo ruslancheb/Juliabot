@@ -3,8 +3,6 @@ define ('Ogon','Ogon');
 error_reporting(E_PARSE|E_ERROR|E_CORE_ERROR|E_COMPILE_ERROR|E_USER_ERROR);
 set_time_limit (100000);
 ini_set('memory_limit','1000M');
-$db=mysql_connect("localhost","root","");
-mysql_select_db("system",$db);
 $pruju=3;
 $otve=$za;
 include 'import_functions.php';
